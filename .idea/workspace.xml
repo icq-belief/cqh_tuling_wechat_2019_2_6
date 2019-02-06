@@ -2,17 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5264d7cd-54cd-41f6-9b6f-6a8d2fce9c78" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/images/1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/2.gif" beforeDir="false" afterPath="$PROJECT_DIR$/images/2.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/3.gif" beforeDir="false" afterPath="$PROJECT_DIR$/images/3.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/4.gif" beforeDir="false" afterPath="$PROJECT_DIR$/images/4.gif" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/5.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/6.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/itchat.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/itchat.pkl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wechat.py" beforeDir="false" afterPath="$PROJECT_DIR$/wechat.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,11 +15,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wechat.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="514">
-              <caret line="399" column="41" selection-start-line="399" selection-start-column="41" selection-end-line="399" selection-end-column="41" />
+            <state relative-caret-position="336">
+              <caret line="330" column="16" lean-forward="true" selection-start-line="330" selection-start-column="16" selection-end-line="330" selection-end-column="16" />
               <folding>
                 <element signature="e#6830#6878#0" />
                 <element signature="e#8449#9261#0" />
@@ -38,46 +27,6 @@
               </folding>
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/images/3.gif">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/images/2.gif">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/images/1.jpg">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/images/4.gif">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/images/6.jpg">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/images/5.jpg">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/images/8.jpg">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/images/9.jpg">
-          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -103,7 +52,7 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="95" />
+    <option name="x" value="311" />
     <option name="y" value="23" />
     <option name="width" value="1206" />
     <option name="height" value="877" />
@@ -190,15 +139,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1549446827410</updated>
-      <workItem from="1549446831595" duration="3411000" />
+      <workItem from="1549446831595" duration="3909000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3411000" />
+    <option name="totallyTimeSpent" value="3909000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="95" y="23" width="1206" height="877" extended-state="0" />
+    <frame x="311" y="23" width="1206" height="877" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
@@ -253,21 +203,6 @@
     <entry file="file://$PROJECT_DIR$/images/7.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/wechat.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="514">
-          <caret line="399" column="41" selection-start-line="399" selection-start-column="41" selection-end-line="399" selection-end-column="41" />
-          <folding>
-            <element signature="e#6830#6878#0" />
-            <element signature="e#8449#9261#0" />
-            <element signature="e#11417#11463#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/1.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/images/2.gif">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -288,6 +223,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/images/9.jpg">
       <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/1.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wechat.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="330" column="16" lean-forward="true" selection-start-line="330" selection-start-column="16" selection-end-line="330" selection-end-column="16" />
+          <folding>
+            <element signature="e#6830#6878#0" />
+            <element signature="e#8449#9261#0" />
+            <element signature="e#11417#11463#0" />
+          </folding>
+        </state>
+      </provider>
     </entry>
   </component>
   <component name="masterDetails">

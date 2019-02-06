@@ -323,7 +323,11 @@ def fun_timer():
     replied.clear()
     del_pic()
     for i in range(1,200):
-        getemotion.getRandomEmoticon()
+        try:
+            getemotion.getRandomEmoticon()
+        except Exception as e:
+            print('下载出现一个异常:%s,继续下一个下载' % e)
+            continue
     global timer
     timer = threading.Timer(43200, fun_timer)
     timer.start()
