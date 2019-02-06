@@ -321,6 +321,8 @@ def del_pic():
 def fun_timer():
     replied.clear()
     del_pic()
+    for i in range(1,200):
+        getemotion.getRandomEmoticon()
     global timer
     timer = threading.Timer(43200, fun_timer)
     timer.start()
@@ -398,5 +400,3 @@ if __name__ == '__main__':
     timer = threading.Timer(1, fun_timer)
     timer.start()
     # return_video_path()
-    for i in range(1,200):
-        getemotion.getRandomEmoticon()

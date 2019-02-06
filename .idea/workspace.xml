@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5264d7cd-54cd-41f6-9b6f-6a8d2fce9c78" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/demo_return.py" beforeDir="false" afterPath="$PROJECT_DIR$/demo_return.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wechat.py" beforeDir="false" afterPath="$PROJECT_DIR$/wechat.py" afterDir="false" />
-    </list>
+    <list default="true" id="5264d7cd-54cd-41f6-9b6f-6a8d2fce9c78" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,14 +9,14 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/cqh_tuling_wechat$demo_return.coverage" NAME="demo_return Coverage Results" MODIFIED="1549451329485" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/cqh_tuling_wechat$demo_return.coverage" NAME="demo_return Coverage Results" MODIFIED="1549452077670" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wechat.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
+            <state relative-caret-position="413">
               <caret line="401" column="38" lean-forward="true" selection-start-line="401" selection-start-column="38" selection-end-line="401" selection-end-column="38" />
               <folding>
                 <element signature="e#6830#6878#0" />
@@ -30,10 +27,12 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/getemotion.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1584" />
+            <state relative-caret-position="259">
+              <caret line="102" column="19" lean-forward="true" selection-start-line="102" selection-start-column="19" selection-end-line="102" selection-end-column="19" />
+            </state>
           </provider>
         </entry>
       </file>
@@ -63,7 +62,7 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="224" />
+    <option name="x" value="295" />
     <option name="y" value="23" />
     <option name="width" value="1206" />
     <option name="height" value="877" />
@@ -150,15 +149,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1549446827410</updated>
-      <workItem from="1549446831595" duration="2421000" />
+      <workItem from="1549446831595" duration="2622000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2421000" />
+    <option name="totallyTimeSpent" value="2622000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="224" y="23" width="1206" height="877" extended-state="0" />
+    <frame x="295" y="23" width="1206" height="877" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
@@ -198,20 +197,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/getemotion.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1584" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wechat.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
+        <state relative-caret-position="413">
           <caret line="401" column="38" lean-forward="true" selection-start-line="401" selection-start-column="38" selection-end-line="401" selection-end-column="38" />
           <folding>
             <element signature="e#6830#6878#0" />
             <element signature="e#8449#9261#0" />
             <element signature="e#11417#11463#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/getemotion.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="102" column="19" lean-forward="true" selection-start-line="102" selection-start-column="19" selection-end-line="102" selection-end-column="19" />
         </state>
       </provider>
     </entry>
