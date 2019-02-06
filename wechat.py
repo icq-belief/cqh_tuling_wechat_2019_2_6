@@ -176,7 +176,11 @@ def pic_reply(msg):
     print('%s给您发送了一个表情/图片，已经存入img目录，文件名：%s' % (NickName, msg['FileName']))
     print('AI帮您回复%s默认表情default.gif' % NickName)
     print('------------------------------------------------------------------------------')
-    res_path = getemotion.getRandomEmoticon()
+
+    path_list = return_image_path()
+    res_path = './images/%s' % (path_list[random.randint(0, (len(path_list)-1))])
+
+    # res_path = getemotion.getRandomEmoticon()
     res_path = '@img@./%s' % res_path
 
     if not replied.get(md5(msg['FromUserName']+'_PICTURE')):
@@ -281,6 +285,18 @@ def video_reply(msg):
     # print(itchat.send_video(res_path, msg['FromUserName']))
 
 
+def return_image_path():
+    s = os.listdir('./images')
+    # print(s)
+    return_s = []
+    for i in s:
+        if re.findall('(^\d+\.gif)|(^\d+\.jpg)', i):
+            return_s.append(i)
+        else:
+            pass
+    return return_s
+
+
 def return_video_path():
     s = os.listdir('./videos')
     return_s = []
@@ -382,3 +398,5 @@ if __name__ == '__main__':
     timer = threading.Timer(1, fun_timer)
     timer.start()
     # return_video_path()
+    for i in range(1,200):
+        getemotion.getRandomEmoticon()
