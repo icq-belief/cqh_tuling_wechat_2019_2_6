@@ -16,7 +16,7 @@ replied = {}
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 def main():
-    itchat.auto_login(enableCmdQR=2 + (platform.system() == 'Linux'),hotReload=True)
+    itchat.auto_login(enableCmdQR=2 ,hotReload=True)
     itchat.run()
 
 
