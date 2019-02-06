@@ -319,6 +319,7 @@ def del_pic():
 
 # 设置定时器,每12个小时清理图片缓存,不再回复列表清单
 def fun_timer():
+    print('定时器开始工作')
     replied.clear()
     del_pic()
     for i in range(1,200):
@@ -396,7 +397,8 @@ def fun_timer():
 
 if __name__ == '__main__':
     checkapi()
-    main()
-    timer = threading.Timer(1, fun_timer)
+    timer = threading.Timer(0, fun_timer)
     timer.start()
+    main()
+
     # return_video_path()
