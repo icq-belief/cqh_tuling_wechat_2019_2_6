@@ -15,12 +15,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wechat.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="330" column="16" lean-forward="true" selection-start-line="330" selection-start-column="16" selection-end-line="330" selection-end-column="16" />
+            <state relative-caret-position="252">
+              <caret line="333" column="20" lean-forward="true" selection-start-line="333" selection-start-column="20" selection-end-line="333" selection-end-column="20" />
               <folding>
+                <element signature="e#23#62#0" expanded="true" />
+                <element signature="e#304#401#0" />
+                <element signature="e#424#637#0" />
+                <element signature="e#686#1474#0" />
+                <element signature="e#1526#1624#0" />
+                <element signature="e#2957#3711#0" />
+                <element signature="e#3804#4535#0" />
+                <element signature="e#4719#5516#0" />
                 <element signature="e#6830#6878#0" />
                 <element signature="e#8449#9261#0" />
                 <element signature="e#11417#11463#0" />
@@ -29,11 +37,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/getemotion.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="292">
-              <caret line="120" column="28" selection-start-line="120" selection-start-column="28" selection-end-line="120" selection-end-column="28" />
+            <state relative-caret-position="1987">
+              <caret line="125" column="30" lean-forward="true" selection-start-line="125" selection-start-column="30" selection-end-line="125" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -52,7 +60,7 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="311" />
+    <option name="x" value="234" />
     <option name="y" value="23" />
     <option name="width" value="1206" />
     <option name="height" value="877" />
@@ -139,16 +147,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1549446827410</updated>
-      <workItem from="1549446831595" duration="3909000" />
+      <workItem from="1549446831595" duration="4961000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3909000" />
+    <option name="totallyTimeSpent" value="4961000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="311" y="23" width="1206" height="877" extended-state="0" />
-    <editor active="true" />
+    <frame x="234" y="23" width="1206" height="877" extended-state="0" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
@@ -187,13 +194,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/getemotion.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="120" column="28" selection-start-line="120" selection-start-column="28" selection-end-line="120" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/images/3.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -229,13 +229,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wechat.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="330" column="16" lean-forward="true" selection-start-line="330" selection-start-column="16" selection-end-line="330" selection-end-column="16" />
+        <state relative-caret-position="252">
+          <caret line="333" column="20" lean-forward="true" selection-start-line="333" selection-start-column="20" selection-end-line="333" selection-end-column="20" />
           <folding>
+            <element signature="e#23#62#0" expanded="true" />
+            <element signature="e#304#401#0" />
+            <element signature="e#424#637#0" />
+            <element signature="e#686#1474#0" />
+            <element signature="e#1526#1624#0" />
+            <element signature="e#2957#3711#0" />
+            <element signature="e#3804#4535#0" />
+            <element signature="e#4719#5516#0" />
             <element signature="e#6830#6878#0" />
             <element signature="e#8449#9261#0" />
             <element signature="e#11417#11463#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/getemotion.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1987">
+          <caret line="125" column="30" lean-forward="true" selection-start-line="125" selection-start-column="30" selection-end-line="125" selection-end-column="30" />
         </state>
       </provider>
     </entry>

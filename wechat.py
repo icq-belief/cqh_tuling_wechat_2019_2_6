@@ -14,6 +14,10 @@ import threading
 # 设置已回复人员列表,限制刷消息的人
 replied = {}
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+# 设置回复消息的最大次数
+MAX_LIMIT_TEXT = 4
+MAX_LIMIT_PICTURE = 5
+MAX_LIMIT_VIDEO = 4
 
 def main():
     itchat.auto_login(enableCmdQR=2 ,hotReload=True)
@@ -86,10 +90,10 @@ def text_reply(msg):
         replied[md5(msg['FromUserName']+'_TEXT')] = 1
         return reply
         # 回复给好友
-    elif replied[md5(msg['FromUserName']+'_TEXT')] < 4:
+    elif replied[md5(msg['FromUserName']+'_TEXT')] < MAX_LIMIT_TEXT:
         replied[md5(msg['FromUserName']+'_TEXT')] += 1
         return reply
-    elif replied[md5(msg['FromUserName']+'_TEXT')] > 4:
+    elif replied[md5(msg['FromUserName']+'_TEXT')] > MAX_LIMIT_TEXT:
         pass
     else:
         replied[md5(msg['FromUserName']+'_TEXT')] += 1
@@ -188,10 +192,10 @@ def pic_reply(msg):
         replied[md5(msg['FromUserName']+'_PICTURE')] = 1
         return u"[主人暂时不在.继续发送图片,助理Neo将会与你斗一下图.Don't be so serious.] "
         # 回复给好友
-    elif replied[md5(msg['FromUserName']+'_PICTURE')] < 5:
+    elif replied[md5(msg['FromUserName']+'_PICTURE')] < MAX_LIMIT_PICTURE:
         replied[md5(msg['FromUserName']+'_PICTURE')] += 1
         return res_path
-    elif replied[md5(msg['FromUserName']+'_PICTURE')] > 5:
+    elif replied[md5(msg['FromUserName']+'_PICTURE')] > MAX_LIMIT_PICTURE:
         pass
     else:
         replied[md5(msg['FromUserName']+'_PICTURE')] += 1
@@ -270,10 +274,10 @@ def video_reply(msg):
         replied[md5(msg['FromUserName']+'_VIDEO')] = 1
         return u"[陈主人暂时不在.继续发送视频.助理Neo将会发送一些小视频给你.Don't be so serious.] "
         # 回复给好友
-    elif replied[md5(msg['FromUserName']+'_VIDEO')] < 4:
+    elif replied[md5(msg['FromUserName']+'_VIDEO')] < MAX_LIMIT_VIDEO:
         replied[md5(msg['FromUserName']+'_VIDEO')] += 1
         itchat.send_video(res_path, msg['FromUserName'])
-    elif replied[md5(msg['FromUserName']+'_VIDEO')] > 4:
+    elif replied[md5(msg['FromUserName']+'_VIDEO')] > MAX_LIMIT_VIDEO:
         pass
     else:
         replied[md5(msg['FromUserName']+'_VIDEO')] += 1
@@ -322,7 +326,7 @@ def fun_timer():
     print('定时器开始工作')
     replied.clear()
     del_pic()
-    for i in range(1,200):
+    for i in range(1,400):
         try:
             getemotion.getRandomEmoticon()
         except Exception as e:
