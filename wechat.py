@@ -18,7 +18,6 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 MAX_LIMIT_TEXT = 4
 MAX_LIMIT_PICTURE = 5
 MAX_LIMIT_VIDEO = 4
-MAX_LIMIT_GROUPTEXT = 3
 
 def main():
     itchat.auto_login(enableCmdQR=2 ,hotReload=True)
@@ -58,7 +57,7 @@ def talk(info, userid=None):
         recontent = result['text'] + result['list'][0]['info'] + \
             result['list'][0]['detailurl']
     else:
-        recontent = '[助理Neo暂时还不会回应你的这句话.Sad Face.]'
+        recontent = '[我的助理Neo暂时还不会回应你的这句话.Sad Face.]'
     return recontent
 
 
@@ -191,7 +190,7 @@ def pic_reply(msg):
     if not replied.get(md5(msg['FromUserName']+'_PICTURE')):
         # 当消息不是由自己发出的时候
         replied[md5(msg['FromUserName']+'_PICTURE')] = 1
-        return u"[主人暂时不在.继续发送图片,助理Neo将会与你斗图,就一下下.Don't be too serious.] "
+        return u"[主人暂时不在.继续发送图片,助理Neo将会与你斗一下图.Don't be so serious.] "
         # 回复给好友
     elif replied[md5(msg['FromUserName']+'_PICTURE')] < MAX_LIMIT_PICTURE:
         replied[md5(msg['FromUserName']+'_PICTURE')] += 1
@@ -200,7 +199,7 @@ def pic_reply(msg):
         pass
     else:
         replied[md5(msg['FromUserName']+'_PICTURE')] += 1
-        return u"[主人让Neo斗图让着你.See you!] "
+        return u"[主人让我斗图让着你.Neo就不发了.See you!] "
 
 
 # @itchat.msg_register(itchat.content.RECORDING)
@@ -273,7 +272,7 @@ def video_reply(msg):
     if not replied.get(md5(msg['FromUserName']+'_VIDEO')):
         # 当消息不是由自己发出的时候
         replied[md5(msg['FromUserName']+'_VIDEO')] = 1
-        return u"[陈主人暂时不在.继续发送视频.助理Neo将会发送一些小视频给你.Don't be too serious.] "
+        return u"[陈主人暂时不在.继续发送视频.助理Neo将会发送一些小视频给你.Don't be so serious.] "
         # 回复给好友
     elif replied[md5(msg['FromUserName']+'_VIDEO')] < MAX_LIMIT_VIDEO:
         replied[md5(msg['FromUserName']+'_VIDEO')] += 1
@@ -344,31 +343,31 @@ def fun_timer():
 #     itchat.send_msg('你好，我的人类朋友！', msg['RecommendInfo']['UserName'])
 
 
-@itchat.msg_register(itchat.content.TEXT, isGroupChat=True)
-def group_reply(msg):
-    if msg['isAt']:
-        reply = talk(msg['Content'], md5(msg['ActualUserName']))
-        print(
-            '------------------------------------------------------------------------------')
-        print('%s在群聊中对您说：%s' % (msg['ActualNickName'], msg['Content'].replace('\u2005',' ')))
-        print('AI帮您回复%s：%s' % (msg['ActualNickName'], reply))
-        print(
-            '------------------------------------------------------------------------------')
-
-        if not replied.get('_GROUPTEXT'):
-            # 当消息不是由自己发出的时候
-            replied['_GROUPTEXT'] = 1
-            itchat.send('@%s %s' % (msg['ActualNickName'], u"[陈主人暂时不在.目前由助理Neo回复你.主人回来后会回复你.] "), msg['FromUserName'])
-            # 回复给好友
-        elif replied['_GROUPTEXT'] < MAX_LIMIT_GROUPTEXT:
-            replied['_GROUPTEXT'] += 1
-            itchat.send('@%s %s' % (msg['ActualNickName'],u"[陈主人暂时不在.目前由助理Neo回复你.主人回来后会回复你.] " + reply), msg['FromUserName'])
-        elif replied['_GROUPTEXT'] > MAX_LIMIT_GROUPTEXT:
-            pass
-        else:
-            replied['_GROUPTEXT'] += 1
-            # return u"[陈主人不让我太闹腾.Neo就不再回复你了.See you!] "
-            itchat.send('@%s %s' % (msg['ActualNickName'], u"[陈主人不让我太闹腾.Neo将不再回复群中消息.Everybody Have a nice day & See you!] "), msg['FromUserName'])
+# @itchat.msg_register(itchat.content.TEXT, isGroupChat=True)
+# def group_reply(msg):
+#     if msg['isAt']:
+#         reply = talk(msg['Content'], md5(msg['ActualUserName']))
+#         print(
+#             '------------------------------------------------------------------------------')
+#         print('%s在群聊中对您说：%s' % (msg['ActualNickName'], msg['Content'].replace('\u2005',' ')))
+#         print('AI帮您回复%s：%s' % (msg['ActualNickName'], reply))
+#         print(
+#             '------------------------------------------------------------------------------')
+#
+#         if not replied.get(md5(msg['ActualUserName'] + '_GROUPTEXT')):
+#             # 当消息不是由自己发出的时候
+#             replied[md5(msg['ActualUserName'] + '_GROUPTEXT')] = 1
+#             itchat.send('@%s %s' % (msg['ActualNickName'], u"[陈主人不在.助理Neo会开始回复你.Don't be serious.]"), msg['FromUserName'])
+#             # 回复给好友
+#         elif replied[md5(msg['ActualUserName'] + '_GROUPTEXT')] < 3:
+#             replied[md5(msg['ActualUserName'] + '_GROUPTEXT')] += 1
+#             itchat.send('@%s %s' % (msg['ActualNickName'],u"[陈主人不在.暂时由助理Neo回复你] " + reply), msg['FromUserName'])
+#         elif replied[md5(msg['ActualUserName'] + '_GROUPTEXT')] > 3:
+#             pass
+#         else:
+#             replied[md5(msg['ActualUserName'] + '_GROUPTEXT')] += 1
+#             # return u"[陈主人不让我太闹腾.Neo就不再回复你了.See you!] "
+#             itchat.send('@%s %s' % (msg['ActualNickName'], u"[陈主人不让我太闹腾.Neo就不再回复你了.See you!] "), msg['FromUserName'])
     # else:
     #     print(
     #         '------------------------------------------------------------------------------')
