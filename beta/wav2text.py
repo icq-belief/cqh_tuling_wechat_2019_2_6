@@ -61,4 +61,4 @@ def wav_to_text(wav_file):
     return res_data['result'][0]
 
 if __name__ == '__main__':
-    wav_to_text('demo.wav')
+    wav_to_text('demo.mp3')
